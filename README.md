@@ -19,8 +19,8 @@ Click "Use this template" to create a new repository with this repo as the initi
 1. Git clone this repository and enter to the repository directory:
 
 ```
-git clone RepoLink
-cd catapulta-forge-template
+git clone https://github.com/BuildBearLabs/Catapulta.git
+cd catapulta
 ```
 
 2. Install  dependencies,
