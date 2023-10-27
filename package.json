@@ -1,0 +1,26 @@
+{
+  "name": "catapulta",
+  "version": "1.0.0",
+  "description": "testing ",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BuildBear",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "@openzeppelin/contracts-upgradeable": "^4.8.0-rc.1",
+    "@types/node": "^18.7.13",
+    "catapulta": "^0.1.45",
+    "ds-test": "https://github.com/dapphub/ds-test.git",
+    "forge-std": "https://github.com/foundry-rs/forge-std",
+    "install": "^0.13.0",
+    "micro-onchain-metadata-utils": "^0.1.1",
+    "sol-uriencode": "^0.2.0"
+  }
+}
