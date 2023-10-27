@@ -20,7 +20,7 @@ Click "Use this template" to create a new repository with this repo as the initi
 
 ```
 git clone https://github.com/BuildBearLabs/Catapulta.git
-cd catapulta
+cd Catapulta
 ```
 
 2. Install  dependencies,
