@@ -16,7 +16,7 @@
     "@openzeppelin/contracts": "^4.7.3",
     "@openzeppelin/contracts-upgradeable": "^4.8.0-rc.1",
     "@types/node": "^18.7.13",
-    "catapulta": "^0.1.45",
+    "catapulta": "^0.2.6",
     "ds-test": "https://github.com/dapphub/ds-test.git",
     "forge-std": "https://github.com/foundry-rs/forge-std",
     "install": "^0.13.0",
