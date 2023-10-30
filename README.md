@@ -1,6 +1,6 @@
 # <h1 align="center"> Catapulta.sh Forge Template </h1>
 
-Template repository for getting started quickly with [Catapulta.sh](https://catapulta.sh/docs) Chain Ops Suite for Foundry projects.
+Template repository for getting started quickly with Deploying Your Contracts to your Private Testnet with [Catapulta.sh](https://catapulta.sh/docs) Chain Ops Suite for Foundry projects.
 
 This repository contains the foundational Foundry project, including Catapula and Nouns protocol smart contracts, as well as deployment scripts.
 
@@ -42,63 +42,25 @@ npx catapulta wallet
 # Private key appended to your .env file.
 ```
 
-4. Get funds for your address by using [List of Faucets for Public Testnets](https://www.buildbear.io/faucet)
-5. Setup your `CATAPULTA_API_KEY` into your .env, generate one at [Catapulta dashboard](https://catapulta.sh)
-6. Deploy the basic contract into Sepolia testnet with Catapulta
+4. Setup your `CATAPULTA_API_KEY` into your .env, generate one at [Catapulta dashboard](https://catapulta.sh)
+5. To deploy the contracts to the Ethereum Mainnet fork, run the following command. This command creates a Private Ethereum Mainnet fork from the latest block, deploys and verifies your contracts on Private Testnet.
 
 ```
- npx catapulta script scripts/DeployContracts.s.sol --network sepolia
+ catapulta script scripts/DeployContracts.s.sol --fork buildbear --network main
 ```
-```
-# Output:
-Catapulta.sh 🏏 Forge script deployment (0.1.36)
-================================================
-Project name: Ghost Deployments
-Project URL: https://catapulta.sh/project/6116272a59b37a3a4a7afb55
-Deployment UUID: 592a91ad-57c8-42c6-b37e-2af0e170f31a
-
-📀 Building artifacts...
-
-🗜  Compressing artifacts...
-
-📤 Uploading artifacts to the Catapulta DB...
-
-✅ Artifacts uploaded successfully.
-
-📡 Broadcasting deployments to Catapulta Gateway RPC: 
-
-📜 Running Foundry script: forge script scripts/DeployContracts.s.sol  --rpc-url "https://catapulta.sh/api/run/add/chain/11155111/5922a91ad2-57c8242c6-b37e-2af0e170f31a/gNd4vq8AqnRWhxwPJiMS" --broadcast --chain-id 11155111 
- 
-.
-Compiling 2 files with 0.8.19
-
-Solc 0.8.19 finished in 623.73ms
-
-Compiler run successful!
-
-[...]
-
-==========================
-
-ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
-
-Total Paid: 0.000852774003979612 ETH (284258 gas * avg 3.000000014 gwei)
+  ![terminal](https://strapi.buildbear.io/uploads/Untitled_2023_10_30_T170835_510_cf10dd3085.png?updated_at=2023-10-30T11:39:25.357Z)
 
 
-✅ Deployment successfully broadcasted 
+6. Access the deployment report conveniently through the Catapulta UI. 
+    - All deployed contracts are conveniently listed for your reference.
+    - Access essential Testnet details, including the Block Explorer, to view transactions and interact with your deployed contracts.
+    - Utilize the Faucet to mint unlimited native and ERC20 Tokens.
+    - Copy the RPC for seamless connectivity to your Testnet within your Hardhat and Foundry projects, allowing you to execute scripts with ease.
+ ![basic 2](https://strapi.buildbear.io/uploads/Untitled_2023_10_30_T171147_750_b038ebb735.png?updated_at=2023-10-30T11:42:12.931Z)
+ ![basic 3](https://strapi.buildbear.io/uploads/Untitled_2023_10_30_T171248_729_f7b3fa30de.png?updated_at=2023-10-30T11:43:01.255Z)
 
-- Etherscan verification request sent. Check the dashboard for keeping track of verifications. If contracts are not verified in 10 minutes, contact support at Discord.
-
-💾 Artifacts stored at:
-- https://users-artifacts.s3.eu-west-1.amazonaws.com/595a911d-57c8-42c6-b37e-2af0e170f31a-deployment-artifacts/artifacts.zip
-
-📸 Check your deployment report at:
- - https://catapulta.sh/project/6416272a59b37a3a4a7afb55/op/595a91ad-57c8-42c6-b37e-2af0e170f31a
-```
-
-7. Check the deployment report at the Catapulta UI, and enjoy delegated Etherscan verification without any extra configs or API keys.
-
-![basic 2](https://github.com/catapulta-sh/catapulta-forge-template/assets/11179847/9b2c830b-ab4e-4da6-b3c0-e515639cc47b)
+7. Click on the deployed contract address, and you will be redirected to the contract page on the BuildBear Explorer. From there, you can interact with the read and write functions of your contract to test its functionality.
+![basic 4](https://strapi.buildbear.io/uploads/Untitled_2023_10_30_T171423_197_caa0d4db97.png?updated_at=2023-10-30T11:44:40.880Z)
 
 
 ## Development
